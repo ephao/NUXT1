@@ -5,10 +5,10 @@
             <div class="flex items-center gap-4">
                 <UButton 
                     variant="ghost" 
-                    to="/" 
+                    to="/waitlist" 
                     class="text-white/70 hover:text-white"
                 >
-                    Home
+                    Waitlist
                 </UButton>
                 <UButton 
                     variant="ghost"

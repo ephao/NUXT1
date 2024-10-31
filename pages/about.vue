@@ -2,7 +2,7 @@
    <div class="pages-waitlist min-h-screen flex flex-col items-center justify-center">
         <FeaturesWaitlistLabelMini />
         <FeaturesWaitlistBoxContainer>
-            <p class="text-white"> Waitlist Page</p>
+            <p class="text-white"> About</p>
             <UButton 
             to="/" 
             target="_blank" 
@@ -14,9 +14,7 @@
     </div>        
 </template> 
 <script setup>
-definePageMeta({
-    layout: 'waitlist'
-})
+
 </script>
 
 <style>
