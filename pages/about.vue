@@ -2,7 +2,7 @@
    <div class="pages-waitlist min-h-screen flex flex-col items-center justify-center">
         <FeaturesWaitlistLabelMini />
         <FeaturesWaitlistBoxContainer>
-            <p class="text-white"> About</p>
+            <ContentDoc class="text-white/70 mb-6"/>
             <UButton 
             to="/" 
             target="_blank" 

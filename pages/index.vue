@@ -3,7 +3,8 @@
         <FeaturesWaitlistLabelMini />
         <FeaturesWaitlistBoxContainer>
             <FeaturesWaitlistBoxHeader />
-            <FeaturesWaitlistBoxDescription />
+            <!-- <FeaturesWaitlistBoxDescription /> -->
+            <ContentDoc class="text-white/70 mb-6"/>
             <FeaturesWaitlistBoxJoinButton />
         </FeaturesWaitlistBoxContainer>
 
