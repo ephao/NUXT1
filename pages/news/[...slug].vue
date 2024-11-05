@@ -5,7 +5,13 @@
             <FeaturesWaitlistBoxHeader />
             <!-- <FeaturesWaitlistBoxDescription /> -->
             <ContentDoc class="text-white/70 mb-6"/>
-            <FeaturesWaitlistBoxJoinButton />
+            <UButton 
+                to="/news" 
+                
+                variant="outline" 
+                class="px-8 text-white hover:bg-white/30"
+            >Back to News
+            </UButton>
         </FeaturesWaitlistBoxContainer>
 
     </div>        
