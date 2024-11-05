@@ -17,6 +17,13 @@
                 >
                     About
                 </UButton>
+                <UButton 
+                    variant="ghost"
+                    to="/news"
+                    class="text-white/70 hover:text-white" 
+                >
+                    News
+                </UButton>
             </div>
         </nav>
     </div>
