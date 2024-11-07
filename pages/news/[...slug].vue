@@ -4,7 +4,7 @@
         <FeaturesWaitlistBoxContainer class="w-2/3">
             <FeaturesWaitlistBoxHeader />
             <!-- <FeaturesWaitlistBoxDescription /> -->
-            <ContentDoc class="text-white/70 mb-6"/>
+            <ContentDoc class="text-white/70 mb-6 markdown-body text-left"/>
             <UButton 
                 to="/news" 
                 
@@ -18,8 +18,16 @@
 </template>
 <script setup>
 definePageMeta({
-    layout: 'waitlist'
+    layout: 'news'
 })
 </script>
 
+<style>
+    .pages-news {
+        min-height: calc(100vh - 100px);
+    }
+    .markdown-body {
+        background-color: transparent;
+    }
+</style>
 
