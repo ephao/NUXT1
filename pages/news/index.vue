@@ -30,7 +30,9 @@
     </div>        
 </template>
 <script setup>
-
+useHead({
+    title:'News'
+    })
 </script>
 
 <style>

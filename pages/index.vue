@@ -11,7 +11,9 @@
     </div>        
 </template>
 <script setup>
-
+useHead({
+    title:'Cow AI'
+    })
 </script>
 
 <style>

@@ -17,6 +17,9 @@
 definePageMeta({
     layout: 'waitlist'
 })
+useHead({
+    title:'Waitlist'
+    })
 </script>
 
 <style>

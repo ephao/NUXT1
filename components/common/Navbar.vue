@@ -24,6 +24,13 @@
                 >
                     News
                 </UButton>
+                <UButton 
+                    variant="ghost"
+                    to="/quote"
+                    class="text-white/70 hover:text-white" 
+                >
+                    Quote
+                </UButton>
             </div>
         </nav>
     </div>

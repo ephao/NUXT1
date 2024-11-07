@@ -19,6 +19,9 @@
 definePageMeta({
     layout: 'news'
 })
+useHead({
+    title:'News'
+    })
 </script>
 
 <style>
