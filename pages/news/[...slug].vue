@@ -1,8 +1,6 @@
   <template>
     <div class="pages-news min-h-screen flex flex-col items-center justify-center">
-        <FeaturesWaitlistBoxContainer class="w-2/3">
-
-            <!-- <FeaturesWaitlistBoxDescription /> -->
+        <FeaturesWaitlistBoxContainer class="w-2/3 mt-20">
             <ContentDoc class="text-white/70 mb-6 markdown-body text-left"/>
             <UButton 
                 to="/news" 
