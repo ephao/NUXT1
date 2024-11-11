@@ -1,6 +1,7 @@
 ---
 title: The Value of Traditional Animal Husbandry Knowledge
 description: While modern farming technologies advance, the timeless wisdom of traditional livestock practices continues to offer valuable insights into sustainable animal care, welfare, and farm management.
+img: "/bg.jpg"
 ---
 
 Traditional livestock farming practices, passed down through generations of farmers, represent a profound understanding of animal behavior and natural cycles. As an old farming proverb states, "The best fertilizer is the farmer's footsteps in the field." This wisdom reminds us that successful animal husbandry requires constant attention, observation, and hands-on care.

@@ -1,17 +1,41 @@
 <template>
    <div class="pages-waitlist min-h-screen flex flex-col items-center justify-center">
         <FeaturesWaitlistBoxContainer class="w-2/3 mt-20">
-             <div class="text-white/70 mb-6 prose prose-invert max-w-none" v-if="randomArticle">
-                <!-- ContentRenderer是通用渲染器,可以渲染任何类型的内容,包括Markdown、Vue组件等 -->
-                <!-- 而ContentRendererMarkdown专门用于渲染Markdown内容 -->
-                <!-- 这里我们只需要使用ContentRenderer即可,因为它能够自动识别并正确渲染Markdown内容 -->
-                <ContentRenderer :value="randomArticle" />
-                
-                <!-- 显示随机文章的标题,使用text-3xl(大字号)、加粗(font-bold)和下边距(mb-4)样式 -->
-                <h1 class="text-3xl font-bold mb-4">{{ randomArticle.title }}</h1>
+            <div v-if="randomArticle" class="animate-fade-in">
+                <!-- Header Image -->
+                <div class="relative w-full h-64 mb-6 overflow-hidden rounded-lg">
+                    <img 
+                        :src="randomArticle.img" 
+                        :alt="randomArticle.title" 
+                        class="absolute w-full h-full object-cover transition-transform duration-300 hover:scale-105 opacity-90 hover:opacity-100"
+                    >
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                        <h1 class="text-3xl font-bold text-white">{{ randomArticle.title }}</h1>
+                    </div>
+                </div>
+
+                <div class="text-white/70 prose prose-invert max-w-none">
+                    <ContentRenderer :value="randomArticle">
+                        <ContentRendererMarkdown :value="randomArticle" />
+                    </ContentRenderer>
+                    <div class="flex justify-center mt-8">
+                        <button 
+                            @click="fetchRandomArticle"
+                            class="px-6 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-colors duration-200 flex items-center space-x-2"
+                        >
+                            <span>Refresh Quote</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
 
-
+            <div v-else class="flex flex-col items-center justify-center py-20 space-y-4">
+                <div class="w-16 h-16 border-4 border-white/20 border-t-white rounded-full animate-spin"></div>
+                <p class="text-white/70 text-lg">Loading inspiring quotes...</p>
+            </div>
         </FeaturesWaitlistBoxContainer>
 
     </div>        
